@@ -3,7 +3,7 @@
 
 #pragma comment (lib, "GdiPlus.lib")
 
-using namespace Gdiplus;
+// using namespace Gdiplus; - 복습내용엔 없
 
 const wchar_t gClassName[] = L"SolitaireWindowClass";
 

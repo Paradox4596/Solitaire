@@ -1,0 +1,28 @@
+#pragma once
+#include <list>
+#include "Card.h"
+
+namespace solitaire
+{
+	class GameLogic
+	{
+		const int BOARD_ROW = 5;
+		const int BPARD_COL = 8;
+		const Gdiplus::RectF BOARD_COUNt_RECT{ 885.0f, 60.0f, 120.0f, 30.0f };
+
+	private:
+		std::unique_ptr<Gdiplus::Image> mBackground;
+		std::list<Card> mDeck;
+		int mClickCount;
+
+	private:
+		void CreateCards();
+
+
+	public:
+		void Init();
+		void Release();
+	};
+}
+
+
